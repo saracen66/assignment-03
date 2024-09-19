@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
+    <!-- Font awesome cds -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- DaisyUI CDN -->
     <link
@@ -45,7 +53,71 @@
   </head>
   <body class="font-manrope">
     <!-- Header Section -->
-    <header class="container mx-auto"></header>
+    <header class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl font-extrabold"
+            ><i
+              class="fa-solid fa-arrow-right -rotate-45 border border-green-primary bg-green-primary text-black rounded-full w-7 h-7 flex items-center justify-center"
+            ></i>
+            Rinterio</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-10 hidden sm:flex">
+          <i
+            class="fa-solid fa-magnifying-glass border border-gray-200 rounded-full w-8 h-8 flex items-center justify-center"
+          >
+          </i>
+          <i
+            class="fa-solid fa-cart-shopping border border-gray-200 rounded-full w-8 h-8 flex items-center justify-center"
+          >
+          </i>
+          <a class="btn bg-green-primary font-extrabold rounded-full"
+            >Book Consult
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 border border-black bg-black text-white rounded-full w-8 h-8 flex items-center justify-center"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </header>
 
     <!-- Main Section -->
     <main></main>
